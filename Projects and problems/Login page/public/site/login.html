@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login • HealthPlus Pharmacy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="./index.html"><span class="brand__logo">HP</span><span>HealthPlus Pharmacy</span></a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="./index.html#features">Features</a>
+          <a href="./index.html#products">Products</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="max-width: 560px;">
+        <div class="card">
+          <h2 style="margin-top:0">Login</h2>
+          <p class="muted">Sign in to manage orders and prescriptions.</p>
+          <form data-name="Login Form">
+            <label>Email
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <label>Password
+              <input type="password" placeholder="Your password" required />
+            </label>
+            <div class="form__actions">
+              <a class="muted" href="./register.html">Create account</a>
+              <a class="muted" href="./forgot-password.html">Forgot password?</a>
+              <button class="btn btn--primary" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small class="muted">© <span id="year"></span> HealthPlus Pharmacy</small>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+

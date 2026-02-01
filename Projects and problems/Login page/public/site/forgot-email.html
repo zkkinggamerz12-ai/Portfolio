@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recover Email • HealthPlus Pharmacy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="./index.html"><span class="brand__logo">HP</span><span>HealthPlus Pharmacy</span></a>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="max-width: 560px;">
+        <div class="card">
+          <h2 style="margin-top:0">Recover your email</h2>
+          <p class="muted">Provide your phone number and we’ll help locate your account.</p>
+          <form data-name="Forgot Email">
+            <label>Phone number
+              <input type="tel" placeholder="(000) 123-4567" required />
+            </label>
+            <div class="form__actions">
+              <a class="muted" href="./login.html">Back to login</a>
+              <button class="btn btn--primary" type="submit">Find account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small class="muted">© <span id="year"></span> HealthPlus Pharmacy</small>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+  
+</html>
+
+
+

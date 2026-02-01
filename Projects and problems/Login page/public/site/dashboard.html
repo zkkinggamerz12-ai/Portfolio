@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard • HealthPlus Pharmacy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="./index.html"><span class="brand__logo">HP</span><span>HealthPlus Pharmacy</span></a>
+        <div class="nav__cta">
+          <a class="btn btn--ghost" href="./login.html">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h2 style="margin-top:0">Welcome back</h2>
+        <p class="muted">This is a static demo dashboard. In a real app, your orders and prescriptions would show here.</p>
+
+        <div class="grid grid--3" style="margin-top:18px">
+          <div class="card">
+            <h3>Active orders</h3>
+            <p class="muted">2 on the way</p>
+          </div>
+          <div class="card">
+            <h3>Saved prescriptions</h3>
+            <p class="muted">4 prescriptions</p>
+          </div>
+          <div class="card">
+            <h3>Refill reminders</h3>
+            <p class="muted">1 upcoming</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Recent orders</h3>
+          <p class="muted">Paracetamol 500mg • Delivered</p>
+          <p class="muted">Vitamin C 1000mg • Dispatched</p>
+        </div>
+
+        <div class="form__actions" style="margin-top:18px; justify-content:flex-end">
+          <a class="btn btn--primary" href="./index.html#products">Shop more</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small class="muted">© <span id="year"></span> HealthPlus Pharmacy</small>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+  
+</html>
+
+
+
